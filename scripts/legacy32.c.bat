@@ -1,0 +1,1 @@
+gcc src/app.c -static -D"bool=BOOL" -D"OLD_WINDOWS_MODE" -mwindows -std=c99 -m32 -o bin/keylogger_blocker.legacy32.exe

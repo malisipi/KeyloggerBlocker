@@ -1,0 +1,25 @@
+101 ICON "../assets/icon.ico"
+
+1 VERSIONINFO
+FILEVERSION     1,0,0,0
+PRODUCTVERSION  1,0,0,0
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904E4"
+    BEGIN
+      VALUE "CompanyName", "malisipi"
+      VALUE "FileDescription", "KeyloggerBlocker"
+      VALUE "FileVersion", "1.0"
+      VALUE "InternalName", "KeyloggerBlocker"
+      VALUE "LegalCopyright", "malisipi - GPLv3"
+      VALUE "OriginalFilename", "keylogger_blocker.exe"
+      VALUE "ProductName", "KeyloggerBlocker"
+      VALUE "ProductVersion", "1.0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x809, 1252
+  END
+END

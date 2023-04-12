@@ -1,0 +1,1 @@
+clang src/app.c bin/temp/app_info.res -static -municode -D"bool=BOOL" -o bin/keylogger_blocker.c.debug.exe

@@ -1,0 +1,1 @@
+windres %cd%/src/app_info.rc -O coff -o %cd%/bin/temp/app_info.res

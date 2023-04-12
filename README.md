@@ -23,3 +23,13 @@
 * [MUI](https://github.com/malisipi/mui) - Apache 2.0 License
 * [tray.h](https://gist.github.com/malisipi/ec70678d9b1c931130902ab97ac68938) - MIT License
 * [Bootstrap Icons](https://icons.getbootstrap.com/) - MIT License
+
+## To-Do List
+
+* [x] Keylogger-blocking system
+* [ ] Blocking keyloggers that has screen-recording ability
+* [ ] Blocking window-recordings from screen
+* [ ] Supporting autostarting
+* [ ] A special keyboard protocol with Arduino
+* [ ] Winlogon support
+* [ ] A virtual keyboard support

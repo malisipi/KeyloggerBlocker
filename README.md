@@ -32,4 +32,4 @@
 * [ ] Supporting autostarting
 * [ ] A special keyboard protocol with Arduino
 * [ ] Winlogon support
-* [ ] A virtual keyboard support
+* [ ] A (built-in) virtual keyboard

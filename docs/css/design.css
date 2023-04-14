@@ -1,0 +1,223 @@
+* {
+    font-family: 'Noto Sans', sans-serif;
+    user-select: none;
+}
+
+img.background {
+    position: fixed;
+    left: -20px;
+    top: -20px;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    pointer-events: none;
+    z-index: -10;
+    object-fit: cover;
+    filter: blur(10px);
+}
+
+div.taskbar {
+    position: fixed;
+    background: #0e2d4777;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+div.taskbar > div.tray {
+    position: fixed;
+    right: 25px;
+    height: 40px;
+    width: 100px;
+    bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    transition-duration: 200ms;
+}
+
+div.taskbar > div.apps {
+    position: fixed;
+    left: 50%;
+    bottom: 5px;
+    width: auto;
+    height: 40px;
+    transform: translate(-50%, 0);
+}
+
+div.taskbar > div.apps > div.button-wrapper > svg.windows {
+    border-radius: 2px;
+}
+
+div.taskbar > div.apps > div.button-wrapper {
+    float: left;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition-duration: 200ms;
+    margin: 0 4px;
+}
+
+div.taskbar > div.tray:hover, div.taskbar > div.apps > div.button-wrapper:hover {
+    background: #3e5d7777;
+}
+
+div.windows > div.app {
+    position: fixed;
+    background: #3e5d77cc;
+    border-radius: 6px;
+    border-top: 30px solid #000000bb;
+}
+
+div.windows > div.the-app {
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    top: 50%;
+}
+
+div.windows > div.app::before {
+    position: absolute;
+    content: attr(app-title);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    height: 30px;
+    left: 10px;
+    top: -30px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+div.windows > div.app::after {
+    position: absolute;
+    content: "";
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' class='bi bi-x' viewBox='0 0 16 16'%3E%3Cpath d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 30px;
+    right: 0;
+    top: -30px;
+}
+
+div.windows > div.app.the-app > img.icon {
+    position: absolute;
+    left: calc(50% - 128px);
+    top: 48px;
+}
+
+div.windows > div.app.the-app > div.label {
+    position: absolute;
+    left: calc(50% - 16px);
+    top: 48px;
+    height: 96px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+}
+
+div.windows > div.app.the-app > div.active {
+    position: absolute;
+    float: left;
+    width: 256px;
+    height: 36px;
+    bottom: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition-duration: 200ms;
+    margin: 0 4px;
+    background: #5e7d9744;
+    color: white;
+}
+
+div.windows > div.app.the-app > div.active:hover {
+    background: #5e7d9788;
+}
+
+div.windows > div.app.notepad {
+    right: 10px;
+    width: 400px;
+    height: calc(100% - 120px);
+    top: 10px;
+}
+
+div.windows > div.app.notepad > textarea.text {
+    position: absolute;
+    background: none;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    padding: 5px;
+    overflow-x: auto;
+}
+
+@media screen and (max-width: 1050px) {
+    div.windows > div.the-app, div.windows > div.app.notepad {
+        width: calc(50% - 15px);
+        height: calc(100% - 120px);
+        transform: unset;
+        top: 10px;
+    }
+
+    div.windows > div.the-app {
+        left: 10px;
+    }
+
+    div.windows > div.app.notepad {
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    div.windows > div.the-app, div.windows > div.app.notepad {
+        width: calc(100% - 20px);
+        left: 10px;
+        transform: unset;
+        height: calc(50% - 80px);
+    }
+
+    div.windows > div.the-app {
+        top: 10px;
+    }
+
+    div.windows > div.app.notepad {
+        top: calc(50% - 20px);
+    }
+}
+
+div.attacker > svg.person {
+    position: fixed;
+    left: 13px;
+    bottom: 13px;
+}
+
+div.attacker > div.logger {
+    position: fixed;
+    left: 13px;
+    bottom: 63px;
+    color: white;
+    background: #0e2d4777;
+    width: 300px;
+    height: 96px;
+    border-radius: 6px;
+    white-space: normal;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    padding: 10px;
+}

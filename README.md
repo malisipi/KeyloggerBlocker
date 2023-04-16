@@ -1,10 +1,10 @@
 # <img src="./assets/icon.png" alt="KeyloggerBlocker" width="64"/> KeyloggerBlocker
 
-|Windows 7+ (Modern)                |Windows 2000+ (Legacy)  |
-|-----------------------------------|------------------------|
-|![](./assets/keylogger_blocker.png)|![](./assets/legacy.png)|
+|Windows 7+ (Modern)                |Windows 2000+ & ReactOS (Legacy)  |
+|-----------------------------------|----------------------------------|
+|![](./assets/keylogger_blocker.png)|![](./assets/legacy.png)          |
 
-> An anti-keyloger for Windows 2000 or above
+> An anti-keyloger for Windows 2000+ and ReactOS
 
 ## Abilities
 

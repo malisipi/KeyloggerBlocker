@@ -48,3 +48,7 @@
 * [ ] A special keyboard protocol with Arduino
 * [ ] Winlogon support
 * [ ] A (built-in) virtual keyboard
+
+## Disclaimer
+
+This software was created for educational purposes. It was produced with the thought of being useful. It does not claim to protect the user from all keyloggers. There is a possibility that some keyloggers can bypass this software. It's always a good idea to use a security software.

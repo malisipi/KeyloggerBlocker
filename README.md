@@ -21,6 +21,8 @@
 
 ²: ~0% CPU Usage and ~2MB RAM Usage for Legacy Version
 
+> View the app with real applications [KeyloggerBlocker vs Random Keyloggers - Youtube](https://youtu.be/SlXk6JGTENI)
+
 ## License
 
 * This project licensed by GPLv3.
